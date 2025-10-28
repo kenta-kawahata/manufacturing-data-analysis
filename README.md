@@ -10,4 +10,5 @@ The goal is to visualize production trends and improve quality through data anal
 ## Next Steps
 - Add sample dataset
 - Perform exploratory data analysis (EDA)
-- Create regression model to predict yield or defect rate
+
+ 8a799f4 (Add initial project structure and EDA notebook template)
