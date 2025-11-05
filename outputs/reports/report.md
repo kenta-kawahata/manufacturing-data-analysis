@@ -9,7 +9,7 @@ CNC加工中のセンサデータから、tool_wear（工具摩耗量）を予�
 
 ## 3. 手法概要
 - 前処理：欠損値確認、特徴量作成（移動平均・合成特徴）
-- モデル：LightGBM,XGBoost, RandomForest
+- モデル：LightGBM, RandomForest
 - 評価指標：MAE, R²
 
 ## 4. 主な結果
