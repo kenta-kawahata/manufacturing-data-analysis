@@ -1,28 +1,51 @@
-# manufacturing-data-analysis
-A collection of data analysis projects focused on manufacturing process optimization and quality control.
+# プロジェクト概要
+CNC加工時のセンサーデータを分析し、工具摩耗（tool_wear）を予測する機械学習モデルを構築。
 
-## Project Overview
-This repository contains exploratory data analysis (EDA), feature engineering, and machine learning models applied to manufacturing datasets.
+# 使用データ
+Kaggle: Multi-Sensor CNC Tool Wear Dataset  
+[データセットURL](https://www.kaggle.com/datasets/ziya07/multi-sensor-cnc-tool-wear-dataset)
 
-## Repository Structure
+# 分析の流れ
+1. EDA（データ理解・可視化）
+2. 前処理・特徴量エンジニアリング
+3. モデル作成（LightGBM）
+4. モデル評価と考察
+
+# 主な結果
+LightGBMモデルを用いてMAE=1.844, R²=0.640を達成。  
+加工履歴（移動平均）を考慮することでMAE=0.240, R²=0.991まで向上。
+
+# 技術スタック
+- Python (pandas, matplotlib, scikit-learn, lightgbm)
+- Jupyter Notebook
+- Git / GitHub
+
+# ファイル構成
 data/
-raw/           # 元データ（大きいファイルは格納しない）
-processed/     # 前処理済データ
-notebooks/       # Jupyter notebooks
-src/             # 再利用可能なPythonコード
-outputs/
-figures/       # 生成したグラフ
-reports/       # レポート（PDF等）
+    raw/
+        Milling_Tool_Dataset.csv
+    processed/
+        mv_avg_2.csv
+        mv_avg_5.csv
+        mv_avg_10.csv
+        mv_avg_20.csv
+        processed_data.csv 
+notebooks/
+    eda.ipynb
+    data_processing.ipynb
+    modeling.ipynb
 
-## Environment
+src/            
+
+outputs/
+    report_en.md
+    report.md
+
+# 環境
 Python 3.x  
 Install dependencies:
 ```bash
 pip install -r requirements.txt
-
-## Example Projects
--EDA: Basic statistics and visualization of sample manufacturing data
--Predictive modeling: Defect rate prediction using regression models
 
 ##Skills Demonstrated
 -Data preprocessing (pandas, numpy)
@@ -31,3 +54,4 @@ pip install -r requirements.txt
 -SQL + Python integration
 
  8a799f4 (Add initial project structure and EDA notebook template)
+ 

@@ -1,8 +1,10 @@
-pandas
+jupyter
 numpy
+pandas
 matplotlib
 seaborn
-scikit-learn
-jupyter
 psycopg2-binary
 sqlalchemy
+scikit-learn
+lightgbm
+optuna
