@@ -16,9 +16,24 @@ LightGBMモデルを用いてMAE=1.829, R²=0.640を達成。
 加工履歴（移動平均）を考慮することでMAE=0.226, R²=0.991まで向上。
 
 # 5.技術スタック
-- Python (pandas, matplotlib, seaborn, scikit-learn, lightgbm)
-- Jupyter Notebook
-- Git / GitHub
+| 言語・フレームワーク | バージョン |
+|:--------:|:-------------:|
+| Python | 3.13.5 |
+| Jupyterlab | 4.4.6 |
+| PostgreSQL | 17.6(Homebrew) |
+| Git | 2.50.1 (Apple Git-155) |
+
+| Pythonパッケージ | バージョン |
+|:--------:|:-------------:|
+| Numpy | 2.3.2 |
+| Pandas | 2.3.2 |
+| Matplotlib | 3.10.6 |
+| Seaborn | 0.13.2 |
+| psycopg2-binary | 2.9.10 |
+| SQLAlchemy | 2.0.43 |
+| Scikit-learn | 1.7.2 |
+| LightGBM | 4.6.0 |
+| Optuna | 4.5.0 |
 
 # 6.ファイル構成
 ```
