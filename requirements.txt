@@ -3,6 +3,7 @@ numpy
 pandas
 matplotlib
 seaborn
+postgresql
 psycopg2-binary
 sqlalchemy
 scikit-learn
